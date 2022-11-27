@@ -15,6 +15,7 @@ class AppThemeWidget extends InheritedWidget {
 
   static AppThemeDate of(BuildContext context) {
     final widget = context.dependOnInheritedWidgetOfExactType<AppThemeWidget>();
+
     return widget!.data;
   }
 }
