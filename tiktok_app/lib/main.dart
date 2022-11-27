@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tiktok_app/src/app/app_host.dart';
+import 'package:tiktok_app/src/common/widgets/app_screen_widget.dart';
 import 'package:tiktok_app/src/config/flutter_binding_config.dart';
 
 import 'src/app/tik_tok_app.dart';
@@ -45,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final bunlde = AppScreenWidget.of(context);
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
